@@ -82,7 +82,7 @@ spec:
   ```
 
 HPA v2,так как у него расшириные возможности
-Соответсвенно скейлим по CPU - 70% использования ресурса,относительно requestов на pode.
+Соответсвенно скейлим по CPU - 77% использования ресурса,относительно requestов на pode.
 ```
 apiVersion: autoscaling/v2beta2 
 kind: HorizontalPodAutoscaler    
@@ -101,7 +101,7 @@ metrics:
     name: cpu
     target:
       type: Utilization
-      averageUtilization: 70
+      averageUtilization: 77
  ```
 
 
